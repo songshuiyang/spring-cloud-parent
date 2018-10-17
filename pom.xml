@@ -14,6 +14,7 @@
     <module>eureka-server</module>
     <module>cloud-provider</module>
     <module>cloud-consumer</module>
+    <module>hystrix-dashboard</module>
   </modules>
 
   <dependencyManagement>

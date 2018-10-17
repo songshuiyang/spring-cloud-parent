@@ -1,5 +1,5 @@
 server:
-  port: 9050
+  port: 9030
 spring:
   application:
     name: eureka-consumer
@@ -8,4 +8,4 @@ eureka:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://localhost:9010/eureka/,http://localhost:9020/eureka/
+      defaultZone: http://localhost:9010/eureka/,http://localhost:9011/eureka/

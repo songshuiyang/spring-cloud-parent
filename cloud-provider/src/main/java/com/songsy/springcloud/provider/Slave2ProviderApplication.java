@@ -13,6 +13,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 public class Slave2ProviderApplication {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(Slave1ProviderApplication.class).properties("server.port=9023").run(args);
+        new SpringApplicationBuilder(Slave1ProviderApplication.class).properties("server.port=9021").run(args);
     }
 }

@@ -1,5 +1,8 @@
 #server:
 #  port: 9080
+#spring:
+#  application:
+#    name: eureka-server
 #eureka:
 #  client:
 #    # 声明是否将自己的信息注册到 Eureka 服务器中
@@ -7,7 +10,7 @@
 #    # 声明是否到Eureka服务器中抓取注册信息
 #    fetch-registry: false
 
-# 集群配置
+#集群配置
 server:
   port: 9010
 spring:
@@ -19,10 +22,10 @@ eureka:
     hostname: slave1
   client:
     serviceUrl:
-      defaultZone: http://slave2:9020/eureka/
+      defaultZone: http://slave2:9011/eureka/
 ---
 server:
-  port: 9020
+  port: 9011
 spring:
   application:
     name: eureka-server
