@@ -14,10 +14,6 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class HystirixService {
 
-    /**
-     * 主要用来调用REST服务，本身并不具备调用分布式服务的能力，但通过LoadBalanced注解
-     * @return
-     */
     @Autowired
     RestTemplate restTemplate;
 

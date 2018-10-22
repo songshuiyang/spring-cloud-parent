@@ -1,0 +1,17 @@
+server:
+  port: 9031
+spring:
+  application:
+    name: feign-consumer
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:9010/eureka/,http://localhost:9011/eureka/
+ribbon:
+  ConnectTimeout: 500
+  ReadTimeout: 5000
+feign:
+  hystrix:
+    enabled: true

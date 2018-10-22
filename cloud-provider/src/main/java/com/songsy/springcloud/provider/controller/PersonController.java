@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
  * @date 2018/8/15 13:50
  */
 @RestController
-public class UserController {
+public class PersonController {
 
     @RequestMapping(value = "/person/{personId}", method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
