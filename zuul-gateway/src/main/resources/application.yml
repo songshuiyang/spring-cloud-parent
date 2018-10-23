@@ -1,0 +1,22 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: zuul-gateway
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:9010/eureka/,http://localhost:9011/eureka/
+zuul:
+  routes:
+    baidu-url: #传统路由方式
+      path: /baidu/**
+      url: http://www.baidu.com/
+    provider:  #面向服务的路由
+      path: /provider/**
+      serviceId: eureka-provider
+    consumer:  #面向服务的路由
+      path: /consumer/**
+      serviceId: eureka-consumer
