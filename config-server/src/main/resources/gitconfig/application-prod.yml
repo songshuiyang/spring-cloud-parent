@@ -1,0 +1,7 @@
+server:
+  port: 9002
+spring:
+  profiles: prod
+  application:
+    name: config-server
+

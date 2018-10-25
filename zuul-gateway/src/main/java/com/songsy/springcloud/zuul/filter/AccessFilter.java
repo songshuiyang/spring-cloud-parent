@@ -41,7 +41,7 @@ public class AccessFilter extends ZuulFilter{
      */
     @Override
     public boolean shouldFilter() {
-        return false;
+        return true;
     }
 
     /**
@@ -60,7 +60,7 @@ public class AccessFilter extends ZuulFilter{
             ctx.setResponseStatusCode(401);
             return null;
         }
-        logger.error("access check passs");
+        logger.error("access check pass");
         return null;
     }
 }
