@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ClientController {
 
-//    @Value("${name}")
+    @Value("${name}")
     private String name;
 
     @GetMapping

@@ -1,13 +1,16 @@
 server:
-  port: 8889
+  port: 8802
 spring:
   application:
     name: configclient
   cloud:
     config:
+      name: configclient
       profile: test
-      uri: http://localhost:8888/
-      label: master
+      uri: http://localhost:8801/
+#      discovery:
+#        enabled: true
+#        service-id: config-server
 eureka:
   instance:
     hostname: localhost
