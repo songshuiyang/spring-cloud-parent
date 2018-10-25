@@ -2,8 +2,15 @@ server:
   port: 8889
 spring:
   application:
-    name: config-client
+    name: configclient
   cloud:
     config:
       profile: test
-      url: http://localhost:8888
+      uri: http://localhost:8888/
+      label: master
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:9010/eureka/
