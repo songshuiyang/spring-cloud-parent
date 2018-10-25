@@ -15,6 +15,7 @@
     <module>cloud-consumer</module>
     <module>eureka-server</module>
     <module>config-server</module>
+    <module>config-client</module>
     <module>feign-comsumer</module>
     <module>hystrix-dashboard</module>
     <module>zuul-gateway</module>

@@ -1,0 +1,9 @@
+server:
+  port: 8889
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      profile: test
+      url: http://localhost:8888

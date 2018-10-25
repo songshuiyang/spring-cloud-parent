@@ -1,12 +1,2 @@
-server:
-  port: 9002
-spring:
-  profiles: test
-  application:
-    name: config-server
-  cloud:
-    config:
-      server:
-        git:
-          uri:
-
+name: songsy
+age: 88
