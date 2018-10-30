@@ -19,6 +19,7 @@
     <module>feign-comsumer</module>
     <module>hystrix-dashboard</module>
     <module>zuul-gateway</module>
+    <module>rabbit-mq</module>
   </modules>
 
   <dependencyManagement>
@@ -66,7 +67,6 @@
       <artifactId>httpclient</artifactId>
       <version>4.5.2</version>
     </dependency>
-
   </dependencies>
 
 

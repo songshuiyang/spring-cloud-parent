@@ -7,7 +7,7 @@
   <groupId>com.songsy</groupId>
   <artifactId>config-client</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>config-server</name>
+  <name>config-client</name>
 
   <parent>
     <groupId>com.songsy</groupId>
